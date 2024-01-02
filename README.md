@@ -47,19 +47,19 @@ Analyze non-Bellabeat smart device data and compare with one Bellabeat product t
 
 ### Data source: 
 
-FitBit Fitness Tracker Data on [Kaggle]( https://www.kaggle.com/datasets/arashnic/fitbit) in 18 CSV files. The data contains smart health data from personal fitness trackers for thirty fitbit users. The data was collected via a survey of personal tracker data, including minute-level output for physical activity, hear rate, and sleep monitoring, through Amazon Mechanical Turk between March 12, 2016 and May 12, 2016. It was last updated three years ago as of Jan 2024. The data includes information about daily activity, steps, and heart rate. 
+FitBit Fitness Tracker Data, hosted on [Kaggle]( https://www.kaggle.com/datasets/arashnic/fitbit), consists of 18 CSV files documenting smart health data from the fitness trackers of thirty users. Data acquisition was carried out through a survey on Amazon Mechanical Turk, capturing minute-level details on physical activity, heart rate, and sleep monitoring from March 12, 2016, to May 12, 2016. As of January 2024, this dataset hasn’t been refreshed in three years and includes daily records of activity, steps, and heart rate.
 
 ### Limitations: 
 
-* The sample size is small as only 30 individuals were considered. 
+* The dataset includes data from only 30 individuals, which is a small sample size that might not accurately represent the larger population.
 
-* The data is about six years old; the FitBit devices have likely evolved to deliver more accurate results. 
+* The information is eight years old, and the FitBit devices have likely been updated to produce more accurate results.
 
-* Since the data was collected through a survey, the results may not be accurate as such participants may not provide honest and accurate answers. 
+* The survey-based collection method can introduce inaccuracies, as participants may not always provide honest or precise answers.
 
-* Data pertaining to weight only has information from eight users. Furthermore, most entries in one of the fields are blank and about two-thirds of the weight entries were manually entered. 
+* Weight data is only available for eight users and contains many blank entries, with around two-thirds of the available weight data being entered manually, which could affect its reliability.
 
-### Supporting data (future exploration): 
+### Additional data: 
 
 As the FitBit data has the limitations listed above, an additional data source would be useful in the analysis. The [Mi Band fitness tracker data (04.2016 - present)](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band) contains data relating to steps and sleep monitoring for one invididual from April 2016 to July 2022 collected from the Mi Band from Xiaomi. The data is stored in two CSV files, one for steps and one for sleep. Using this data, the analysis can also consider one individual over an extended period of time. The uploader of the data does note that there were about two weeks worth of step data that was corrupted so these data points were defaulted to zero.  
 
