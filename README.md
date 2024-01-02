@@ -61,9 +61,9 @@ FitBit Fitness Tracker Data, hosted on [Kaggle]( https://www.kaggle.com/datasets
 
 ### Additional data: 
 
-As the FitBit data has the limitations listed above, an additional data source would be useful in the analysis. The [Mi Band fitness tracker data (04.2016 - present)](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band) contains data relating to steps and sleep monitoring for one invididual from April 2016 to July 2022 collected from the Mi Band from Xiaomi. The data is stored in two CSV files, one for steps and one for sleep. Using this data, the analysis can also consider one individual over an extended period of time. The uploader of the data does note that there were about two weeks worth of step data that was corrupted so these data points were defaulted to zero.  
+Given the constraints of the FitBit data, supplementing the analysis with an additional data source is recommended. The Mi Band fitness tracker data, available from [Kaggle](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band), offers a longitudinal dataset covering steps and sleep monitoring from April 2016 to July 2022 for an individual user of the Xiaomi Mi Band. This dataset comprises two CSV files, separately detailing step counts and sleep patterns. Including this data allows for an analysis of long-term user engagement with fitness tracking on an individual level. However, it's noted by the uploader that approximately two weeks of step data were corrupted and have been set to zero.
 
-For a more throuogh look at the data see the [Data Dictionary and Documentation](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Data%20Documentation%20and%20Data%20Dictionary.md) file. 
+For detailed insights into the variables and structure of the data, refer to the [Data Dictionary and Documentation](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Data%20Documentation%20and%20Data%20Dictionary.md) file.
 
 # Process
 
