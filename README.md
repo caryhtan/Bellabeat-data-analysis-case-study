@@ -17,7 +17,7 @@ Bellabeat’s co-founders would like to analyze data from non-Bellabeat fitness 
 
 1. Urška Sršen: Bellabeat’s cofounder and Chief Creative Officer
 
-2. Sando Mu: Mathematician and Bellabeat’s cofounder
+2. Sando Mur: Mathematician and Bellabeat’s cofounder
 
 3. The Bellabeat marketing analytics team: a team of data analysts responsible for collecting, analyzing, and reporting data that helps guide Bellabeat’s marketing strategy.
 
