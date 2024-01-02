@@ -3,7 +3,9 @@
 ## A Google Data Analytics Professional Certificate Capstone Project
 
 
-<img align="center" width="500" height="300" src="images/lifestyle.jpg">
+<div align="center">
+  <img width="500" height="300" src="images/lifestyle.jpg">
+</div>
 
 [Bellabeat]( https://bellabeat.com/) is a company that develops fitness products for women. Their products include smart water bottles, fashionable fitness watches and jewelry, and yoga mats. Users can access their health data collected through these devices in the Bellabeat app.
 
