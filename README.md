@@ -2,7 +2,6 @@
 
 ## A Google Data Analytics Professional Certificate Capstone Project by Cary Htan
 
-
 <div align="center">
   <img width="500" height="300" src="images/lifestyle.jpg">
 </div>
@@ -63,28 +62,25 @@ FitBit Fitness Tracker Data, hosted on [Kaggle]( https://www.kaggle.com/datasets
 
 Given the constraints of the FitBit data, supplementing the analysis with an additional data source is recommended. The Mi Band fitness tracker data, available from [Kaggle](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band), offers a longitudinal dataset covering steps and sleep monitoring from April 2016 to July 2022 for an individual user of the Xiaomi Mi Band. This dataset comprises two CSV files, separately detailing step counts and sleep patterns. Including this data allows for an analysis of long-term user engagement with fitness tracking on an individual level. However, it's noted by the uploader that approximately two weeks of step data were corrupted and have been set to zero.
 
-For detailed insights into the variables and structure of the data, refer to the [Data Dictionary and Documentation](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Data%20Documentation%20and%20Data%20Dictionary.md) file.
+For detailed insights into the variables and structure of the data, refer to the [Data Dictionary and Documentation](Data%20Documentation%20and%20Data%20Dictionary.md) file.
 
 # Process
 
-## Choosing Data Files
+## Data files selection
+The `dailyActivity_merged.csv` file is good for looking at steps and calories burned. The `sleepDay_merged.csv` file is helpful for understanding sleep. And since fitness devices are often used to track weight, the `weightLogInfo_merged.csv` file with weight information is also useful. These files together can give a good picture of health and how people use their fitness devices.
 
-As `dailyActivity_merged.csv ` provides a good summary of steps and calories burned and the `sleepDay_merged.csv` file provides sleep data these are good overall files to use to analyze patricipant usage. As fitness devices are generally used to track overall health and weight, the file `weightLogInfo_merged` containing weight data will also be used. 
+## Softwares selection
+Excel will be used for early review of data, R for transformation and exploration of the data, and Tableau for visualization of the data.
 
+## Steps for Early Review
+1) Use filters to check for and remove any empty entries in the data.
+2) Change the Id field to text since you don't need to do math with it.
+3) Change ActivityDate from Datetime to just Date because only dates are listed.
+4) Look at the `dailyActivity_merged.csv` file and note where TotalSteps is zero and SedentaryMinutes is 1440. The calories burned changes per user, likely due to differences in weight and height. Sometimes sedentary minutes are 1440 but no calories are burned.
+5) Note in the `weightLogInfo_merged` file that there are only two entries for the Fat field, so it won't be much use for insights.
 
-## Applications
-Excel will be used to load and take an initial pass for issues, R to transform and explore the data, and Tableau to interactively visuallize the data. 
-
-## Initial Pass Through 
-
-1) Make sure there are no blank entries in the data by using filters.
-2) Convert Id field to text data type as no numerical equations are needed for this field. 
-3) Convert ActivityDate from Datetime to Date types as no times are given in the data. 
-4) In the `dailyActivity_merged.csv ` file, there are many instances where TotalSteps is zero and SedentaryMinutes is 1440; the number of calories burned vary between users. This is most likely due to the weight and height of the user. There are a few instances where the sedentary minutes is 1440 but the calories burned is 0. 
-5) In the `weightLogInfo_merged` file, there are only two entries for the Fat field so this will not be used to draw insights. 
-
-## Transform and Explore 
-All R code can be found [here](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/BellaBeat_RScript.R).
+## Transformation and Exploration
+Path to R codes: [BellaBeat_RScript](BellaBeat_RScript.R)
 
 1) Load the tidyverse package and data files 
 2) Check to see if the data has been loaded correctly
