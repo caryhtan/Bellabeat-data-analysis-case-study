@@ -80,42 +80,41 @@ Excel will be used for early review of data, R for transformation and exploratio
 5) Note in the `weightLogInfo_merged` file that there are only two entries for the Fat field, so it won't be much use for insights.
 
 ## Transformation and Exploration
-Path to R codes: [BellaBeat_RScript](BellaBeat_RScript.R)
+To see R codes: [Click here](BellaBeat_RScript.R)
 
-1) Load the tidyverse package and data files 
-2) Check to see if the data has been loaded correctly
-3) Convert the Id field to character data type 
-4) Rename ActivityDate, SleepDay, and Date to convert to date data type 
+1) Begin by loading the tidyverse package and the data files.
+2) Verify that the data has loaded as expected.
+3) Change the Id field from numbers to text.
+4) Update the names of ActivityDate, SleepDay, and Date to the date format.
 
-```
-activity <-activity %>%
+```markdown
+activity <- activity %>%
   mutate_at(vars(Id), as.character) %>%
   mutate_at(vars(ActivityDate), as.Date, format = "%m/%d/%y") %>%
   rename("Day"="ActivityDate") 
 ```
-  
-  
-5) Combine data frames using left and right joins
-6) Add day of the week variable 
 
-```
-combined_data <-sleep %>%
+5) Link the data sets together using a mix of joining methods.
+6) Include a new variable to indicate the day of the week.
+
+```markdown
+combined_data <- sleep %>%
   right_join(activity, by=c("Id","Day")) %>%
   left_join(weight, by=c("Id", "Day")) %>%
   mutate(Weekday = weekdays(as.Date(Day, "m/%d/%Y")))
 ```
 
-7) Filter and remove duplicate rows; count NAs and distinct entries using Id
+7) Clean the data by eliminating duplicate rows and count the number of missing and unique Id entries.
 
-```
-combined_data <-combined_data[!duplicated(combined_data), ]
+```markdown
+combined_data <- combined_data[!duplicated(combined_data), ]
 sum(is.na(combined_data))
 n_distinct(combined_data$Id)
 n_distinct(sleep$Id)
 n_distinct(weight$Id)
 ```
 
-The final data frame has 940 variables with 25 variables. There are 33 distinct Id entries total. The number of distinct users in dailyActivity, sleepDay, and weightLogInfo are 33, 24, and 8, respectively. There are 6893 NAs in the combined data. This is not surprising as there is only weight data from eight users and not all users logged sleep information. 
+The final dataset consists of 940 variables with 25 variables. In total, there are 33 unique Id entries. The counts of distinct users in dailyActivity, sleepDay, and weightLogInfo are 33, 24, and 8, respectively. The combined data contains 6893 missing values, which is expected given the limited weight data from eight users and incomplete sleep information logging from some users.
 
 # Analyze 
 
