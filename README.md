@@ -126,42 +126,41 @@ select(TotalMinutesAsleep, TotalSteps, TotalDistance, VeryActiveMinutes, FairlyA
 summary()
 ```
 
+![Summary Statistics](images/analyze1.png)
 
-![Summary Statistics](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Summary%20Statistics.png?raw=true "Summary Statistics")
+On average, a user weighs 72.04 kg, with a BMI of 25.19, and predominantly engages in light activities. Typically, users sleep for 6.9 hours, walk 7638 steps, and cover a distance of 5.49 km each day.
 
-The average user weighs 72.04 kg, has a BMI of 25.19, and spent the most time doing light activities. On average, they also slept 6.9 hours, took 7638 steps, and traveled 5.49 km per day. 
+![Steps by Day](images/analyze2.png)
 
-![Steps by Day](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Total%20steps%20by%20day.png?raw=true "Steps by Day")
+Analysis reveals that users are most active on Sundays and least active on Fridays. Given the consistently high step counts, it's apparent that users find the step counting feature of fitness devices valuable. This insight suggests that similar functionalities would be appreciated by Bellabeat's customer base.
 
-Users took the most steps on Sundays and the least number of steps on Fridays. As all the values are fairly high, the marketing team can conclude that users value the step feature of health fitness devices. They could also assume that the feature will be very useful for Bellabeat customers. 
+![Fairly Active Minutes by Day](images/analyze3.png)
 
-![Fairly Active Minutes by Day](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Minutes%20of%20moderate%20activity%20per%20day.png?raw=true "Fairly Active Minutes by Day")
+Interestingly, there is a noticeable dip in fairly active minutes during the middle of the week, particularly on Wednesdays, followed by an increase on Thursdays. This pattern might reflect a mid-week slump as individuals return to work on Monday and feel a dip in motivation or energy by midweek, using Wednesday as a rest day before resuming activities.
 
-It is interesting to see that the amount of time spent being fairly active decreased on Wednesdays and then picks back up on Thursdays. This may be due to the fact that most people are going back to work on Monday and then may get discouraged or tired by Wednesday. Wednesday may also be a popular rest day, allowing them to resume their activities on Thursday. 
+![Distribution of Total Sleep Time](images/analyze3.png)
 
-![Distribution of Total Sleep Time](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Distribution%20of%20sleep%20time.png?raw=true "Distribution of Total Sleep Time")
+The histogram shows that the majority of users sleep between 312 and 563 minutes nightly, translating to about 5.2 to 9.4 hours. It's important to note that this figure does not account for total rest time, only sleep.
 
-From the above histogram, most people slept between 312 and 563 minutes (between 5.2 and 9.4 hours). Note that this does not include the total time spent in bed resting.  
+![Calories vs Time Slept](images/analyze4.png)
 
-![Calories vs Time Slept](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Total%20minutes%20Asleep%20vs%20Calories.png?raw=true "Calories vs Time Slept")
+The majority of calories are burned by individuals who sleep between 5 and 7 hours, with few outliers. This trend is consistent with the broader 5.2 to 9.4 hours sleep range observed, indicating an optimal sleep duration for calorie expenditure.
 
-Besides a few outliers, calories were burned by those who slept between 5 and 7 hours. If only considering weight loss and calories burned, this aligns with the 5.2 to 9.4 hour sleep range, which may indicate that those who stay withint this range burn more calories.
+![Logged Activity Distance by Day](images/analyze5.png)
 
-![Logged Activity Distance by Day](https://github.com/CoolBeansProgramming/Bellabeat-Case-Study/blob/main/Images/Logged%20Activities%20Distance.png?raw=true "Logged Activity Distance by Day")
-
-The logged feature was not used too often as there were many blanks in the data and no records were available  for Thursday and Friday. The highest days of logged distance were on the weekend or times when many people likely have free time to do physical activities. 
+The data indicates infrequent use of the logging feature, with many missing entries and no records for Thursdays and Fridays. The most significant logged distances occur over the weekend, suggesting that users might be more inclined to engage in physical activities during their leisure time.
 
 ## Share 
 
-Check out the daashboard on Tableau Public: [Bellabeat Dashboard](https://public.tableau.com/app/profile/paijetableau/viz/BellaBeatCaseStudy_16610415560350/Dashboard?publish=yes)
+Please see dashboard image made using Tableau: [Bellabeat Dashboard](images/Dashboard.png)
 
 ## Act
 
-* The number of steps users took was the least on Friday which may be due to user becoming tired at the end of the week. As this is not limited to only FitBit customers, the marketing team could send notifications to users Thursday evenings and Friday and Saturday mornings encouraging users to continue being physical active throughout the day.
+* Fridays show a notable dip in physical activity among users, possibly due to accumulated fatigue throughout the week. To counteract this trend, marketing strategies might include sending motivational notifications on Thursday evenings and during the morning hours of Friday and Saturday, encouraging users to stay active.
 
-* Many users did not use the Logged Distance feature on the FitBit devices. This suggests that users would prefer to have their data collected automatically. The Bellabeat marketing team can decide not to a feature activity distance log function as many users seem to not use this.
+* The underutilization of the Logged Distance feature on FitBit devices implies a preference for automatic data capture over manual inputs. Bellabeat's marketing strategy could, therefore, focus on promoting features that require minimal user intervention, sidelining the manual activity distance log function due to its apparent unpopularity.
 
-* Compared to the data set size, there were very few entries for weight. Of those that were entered, about 2/3 were done manually. The individuals who did not log their weight may not have been concerned with losing weight or did not have the device needed to automatically record this data. Since many did not use the logged distance feature as well, the Bellabeat team could market weight devices like smart scales that automatically record this information.
+* The dataset contains relatively few weight entries, with a majority being manually logged. This might indicate a lack of concern with weight monitoring or the absence of automatic logging tools. Bellabeat could leverage this insight by marketing devices that automatically track and log weight, like smart scales, particularly appealing to those who avoided manual logging.
 
-* Other data sources, like the [Mi Band fitness tracker data (04.2016 - present)](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band), could be useful for further exploration as this specific data set follows on individual over the course of six years. 
+* For a more comprehensive understanding and validation of trends, additional data sources such as the [Mi Band fitness tracker data (04.2016 - present)](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band) could be invaluable. This dataset provides extensive insights over a multi-year span on an individual's activity and sleep patterns, offering a robust platform for comparison and analysis.
 
