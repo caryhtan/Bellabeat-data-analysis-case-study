@@ -58,10 +58,6 @@ FitBit Fitness Tracker Data, hosted on [Kaggle]( https://www.kaggle.com/datasets
 
 * Weight data is only available for eight users and contains many blank entries, with around two-thirds of the available weight data being entered manually, which could affect its reliability.
 
-### Additional data: 
-
-Given the constraints of the FitBit data, supplementing the analysis with an additional data source is recommended. The Mi Band fitness tracker data, available from [Kaggle](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band), offers a longitudinal dataset covering steps and sleep monitoring from April 2016 to July 2022 for an individual user of the Xiaomi Mi Band. This dataset comprises two CSV files, separately detailing step counts and sleep patterns. Including this data allows for an analysis of long-term user engagement with fitness tracking on an individual level. However, it's noted by the uploader that approximately two weeks of step data were corrupted and have been set to zero.
-
 For detailed insights into the variables and structure of the data, refer to the [Data Dictionary and Documentation](Data%20Documentation%20and%20Data%20Dictionary.md) file.
 
 # Process
@@ -162,5 +158,4 @@ Please see dashboard image made using Tableau: [Bellabeat Dashboard](images/Dash
 
 * The dataset contains relatively few weight entries, with a majority being manually logged. This might indicate a lack of concern with weight monitoring or the absence of automatic logging tools. Bellabeat could leverage this insight by marketing devices that automatically track and log weight, like smart scales, particularly appealing to those who avoided manual logging.
 
-* For a more comprehensive understanding and validation of trends, additional data sources such as the [Mi Band fitness tracker data (04.2016 - present)](https://www.kaggle.com/datasets/damirgadylyaev/more-than-4-years-of-steps-and-sleep-data-mi-band) could be invaluable. This dataset provides extensive insights over a multi-year span on an individual's activity and sleep patterns, offering a robust platform for comparison and analysis.
 
